@@ -6,9 +6,15 @@
     <title>Document</title>
 
     <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+
+        <ul v-if="email.length == 10">
+            <li v-for="mail in email">{{ mail }}</li>
+        </ul>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
